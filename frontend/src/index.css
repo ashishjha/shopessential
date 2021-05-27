@@ -51,3 +51,23 @@ h2 {
     font-size: 2.5vw;
   }
 }
+
+.cardSize {
+  height: 200px;
+}
+
+.navbar-custom {
+  background-color: #ffffff;
+}
+
+.card-design {
+  box-shadow: 6px 6px 10px #d9d9d9, -6px -6px 10px #ffffff;
+  border: none;
+  border-radius: 50px;
+}
+
+.center-text {
+  text-align: center;
+  border-radius: 50px;
+  background-color: #f0ad4e;
+}

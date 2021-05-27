@@ -49,8 +49,7 @@ const RegisterScreen = ({ location, history }) => {
             type='name'
             placeholder='Enter name'
             value={name}
-            onChange={(e) => setName(e.target.value)}
-          ></Form.Control>
+            onChange={(e) => setName(e.target.value)}></Form.Control>
         </Form.Group>
 
         <Form.Group controlId='email'>
@@ -59,8 +58,7 @@ const RegisterScreen = ({ location, history }) => {
             type='email'
             placeholder='Enter email'
             value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          ></Form.Control>
+            onChange={(e) => setEmail(e.target.value)}></Form.Control>
         </Form.Group>
 
         <Form.Group controlId='password'>
@@ -69,8 +67,7 @@ const RegisterScreen = ({ location, history }) => {
             type='password'
             placeholder='Enter password'
             value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          ></Form.Control>
+            onChange={(e) => setPassword(e.target.value)}></Form.Control>
         </Form.Group>
 
         <Form.Group controlId='confirmPassword'>
@@ -79,11 +76,10 @@ const RegisterScreen = ({ location, history }) => {
             type='password'
             placeholder='Confirm password'
             value={confirmPassword}
-            onChange={(e) => setConfirmPassword(e.target.value)}
-          ></Form.Control>
+            onChange={(e) => setConfirmPassword(e.target.value)}></Form.Control>
         </Form.Group>
 
-        <Button type='submit' variant='primary'>
+        <Button type='submit' variant='warning'>
           Register
         </Button>
       </Form>

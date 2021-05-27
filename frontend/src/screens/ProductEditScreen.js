@@ -90,10 +90,9 @@ const ProductEditScreen = ({ match, history }) => {
       })
     )
   }
-
   return (
     <>
-      <Link to='/admin/productlist' className='btn btn-light my-3'>
+      <Link to='/admin/PRODUCTlist' className='btn btn-light my-3'>
         Go Back
       </Link>
       <FormContainer>
@@ -112,8 +111,7 @@ const ProductEditScreen = ({ match, history }) => {
                 type='name'
                 placeholder='Enter name'
                 value={name}
-                onChange={(e) => setName(e.target.value)}
-              ></Form.Control>
+                onChange={(e) => setName(e.target.value)}></Form.Control>
             </Form.Group>
 
             <Form.Group controlId='price'>
@@ -122,8 +120,7 @@ const ProductEditScreen = ({ match, history }) => {
                 type='number'
                 placeholder='Enter price'
                 value={price}
-                onChange={(e) => setPrice(e.target.value)}
-              ></Form.Control>
+                onChange={(e) => setPrice(e.target.value)}></Form.Control>
             </Form.Group>
 
             <Form.Group controlId='image'>
@@ -132,14 +129,12 @@ const ProductEditScreen = ({ match, history }) => {
                 type='text'
                 placeholder='Enter image url'
                 value={image}
-                onChange={(e) => setImage(e.target.value)}
-              ></Form.Control>
+                onChange={(e) => setImage(e.target.value)}></Form.Control>
               <Form.File
                 id='image-file'
                 label='Choose File'
                 custom
-                onChange={uploadFileHandler}
-              ></Form.File>
+                onChange={uploadFileHandler}></Form.File>
               {uploading && <Loader />}
             </Form.Group>
 
@@ -149,8 +144,7 @@ const ProductEditScreen = ({ match, history }) => {
                 type='text'
                 placeholder='Enter brand'
                 value={brand}
-                onChange={(e) => setBrand(e.target.value)}
-              ></Form.Control>
+                onChange={(e) => setBrand(e.target.value)}></Form.Control>
             </Form.Group>
 
             <Form.Group controlId='countInStock'>
@@ -159,8 +153,9 @@ const ProductEditScreen = ({ match, history }) => {
                 type='number'
                 placeholder='Enter countInStock'
                 value={countInStock}
-                onChange={(e) => setCountInStock(e.target.value)}
-              ></Form.Control>
+                onChange={(e) =>
+                  setCountInStock(e.target.value)
+                }></Form.Control>
             </Form.Group>
 
             <Form.Group controlId='category'>
@@ -169,8 +164,7 @@ const ProductEditScreen = ({ match, history }) => {
                 type='text'
                 placeholder='Enter category'
                 value={category}
-                onChange={(e) => setCategory(e.target.value)}
-              ></Form.Control>
+                onChange={(e) => setCategory(e.target.value)}></Form.Control>
             </Form.Group>
 
             <Form.Group controlId='description'>
@@ -179,11 +173,10 @@ const ProductEditScreen = ({ match, history }) => {
                 type='text'
                 placeholder='Enter description'
                 value={description}
-                onChange={(e) => setDescription(e.target.value)}
-              ></Form.Control>
+                onChange={(e) => setDescription(e.target.value)}></Form.Control>
             </Form.Group>
 
-            <Button type='submit' variant='primary'>
+            <Button type='submit' variant='warning'>
               Update
             </Button>
           </Form>

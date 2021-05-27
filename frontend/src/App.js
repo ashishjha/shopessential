@@ -14,10 +14,10 @@ import PaymentScreen from './screens/PaymentScreen'
 import PlaceOrderScreen from './screens/PlaceOrderScreen'
 import OrderScreen from './screens/OrderScreen'
 import UserListScreen from './screens/UserListScreen'
-import UserEditScreen from './screens/UserEditScreen'
+import UserEditScreen from './screens/UserEditScren'
 import ProductListScreen from './screens/ProductListScreen'
 import ProductEditScreen from './screens/ProductEditScreen'
-import OrderListScreen from './screens/OrderListScreen'
+import OrderListScreen from './screens/OrderListScren'
 
 const App = () => {
   return (
@@ -44,7 +44,6 @@ const App = () => {
           <Route
             path='/admin/productlist/:pageNumber'
             component={ProductListScreen}
-            exact
           />
           <Route path='/admin/product/:id/edit' component={ProductEditScreen} />
           <Route path='/admin/orderlist' component={OrderListScreen} />

@@ -15,6 +15,8 @@ const CartScreen = ({ match, location, history }) => {
   const cart = useSelector((state) => state.cart)
   const { cartItems } = cart
 
+  //console.log(cartItems)
+
   useEffect(() => {
     if (productId) {
       dispatch(addToCart(productId, qty))
@@ -57,8 +59,7 @@ const CartScreen = ({ match, location, history }) => {
                         dispatch(
                           addToCart(item.product, Number(e.target.value))
                         )
-                      }
-                    >
+                      }>
                       {[...Array(item.countInStock).keys()].map((x) => (
                         <option key={x + 1} value={x + 1}>
                           {x + 1}
@@ -70,8 +71,7 @@ const CartScreen = ({ match, location, history }) => {
                     <Button
                       type='button'
                       variant='light'
-                      onClick={() => removeFromCartHandler(item.product)}
-                    >
+                      onClick={() => removeFromCartHandler(item.product)}>
                       <i className='fas fa-trash'></i>
                     </Button>
                   </Col>
@@ -100,7 +100,7 @@ const CartScreen = ({ match, location, history }) => {
                 className='btn-block'
                 disabled={cartItems.length === 0}
                 onClick={checkoutHandler}
-              >
+                variant='warning'>
                 Proceed To Checkout
               </Button>
             </ListGroup.Item>

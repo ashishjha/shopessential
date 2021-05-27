@@ -10,6 +10,7 @@ import {
   deleteProduct,
   createProduct,
 } from '../actions/productActions'
+
 import { PRODUCT_CREATE_RESET } from '../constants/productConstants'
 
 const ProductListScreen = ({ history, match }) => {
@@ -77,7 +78,10 @@ const ProductListScreen = ({ history, match }) => {
           <h1>Products</h1>
         </Col>
         <Col className='text-right'>
-          <Button className='my-3' onClick={createProductHandler}>
+          <Button
+            className='my-3'
+            onClick={createProductHandler}
+            variant='warning'>
             <i className='fas fa-plus'></i> Create Product
           </Button>
         </Col>
@@ -108,7 +112,7 @@ const ProductListScreen = ({ history, match }) => {
                 <tr key={product._id}>
                   <td>{product._id}</td>
                   <td>{product.name}</td>
-                  <td>${product.price}</td>
+                  <td>₹{product.price}</td>
                   <td>{product.category}</td>
                   <td>{product.brand}</td>
                   <td>
@@ -120,8 +124,7 @@ const ProductListScreen = ({ history, match }) => {
                     <Button
                       variant='danger'
                       className='btn-sm'
-                      onClick={() => deleteHandler(product._id)}
-                    >
+                      onClick={() => deleteHandler(product._id)}>
                       <i className='fas fa-trash'></i>
                     </Button>
                   </td>
