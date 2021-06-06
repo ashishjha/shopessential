@@ -1,4 +1,4 @@
-# ProShop eCommerce Platform
+# ShopEssential eCommerce Platform
 
 > eCommerce platform built with the MERN stack & Redux.
 
