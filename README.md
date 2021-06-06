@@ -2,6 +2,10 @@
 
 > eCommerce platform built with the MERN stack & Redux.
 
+# Hosted on Heroku
+
+> Visit me : [link to site!](https://shopessential.herokuapp.com/)
+
 ![screen shot](./uploads/homepage.png)
 
 ## Features
