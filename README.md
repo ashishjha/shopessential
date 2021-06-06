@@ -2,7 +2,7 @@
 
 > eCommerce platform built with the MERN stack & Redux.
 
-![screen shot](https://github.com/ashishjha/shopessential/blob/[main]/screencapture-shopessential-herokuapp-2021-06-03-18_05_30.png?raw=true)
+![screen shot](https://github.com/ashishjha/shopessential/blob/main/homepage.png?raw=true)
 
 ## Features
 
